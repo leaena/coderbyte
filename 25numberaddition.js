@@ -18,7 +18,6 @@ function NumberAddition(str) {
     }
 
   }
-  console.log(numbers);
   for (var k = 0; k < numbers.length; k++){
     sum += parseInt(numbers[k]);
   }
