@@ -1,5 +1,5 @@
 function ArrayAdditionI(arr) { 
-  arr.sort(function(a,b){a - b})
+  arr.sort(function(a,b){return a - b})
   var largest = arr.pop();
   var sum = 0;
   for (var i = 0; i < arr.length; i++){
