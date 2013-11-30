@@ -1,11 +1,5 @@
 function FirstReverse(str) { 
-  var stringed = str.split("");
-  str = stringed.reverse();
-  // code goes here  
-  return str.join(""); 
-         
-}
-   
-// keep this function call here 
-// to see how to enter arguments in JavaScript scroll down
-print(FirstReverse(readline()));                            
+  return str.split("")  //splits the string into an array of characters
+            .reverse()  //reverses the array
+            .join("");  //joins the array back into a string, with no space between the characters      
+}                      
