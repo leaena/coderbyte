@@ -1,19 +1,6 @@
 function ThirdGreatest(strArr) { 
-  var first = "";
-  var second = "";
-  var third = "";
-  for (var i = 0; i < strArr.length; i++){
-    if (strArr[i].length > first.length){
-      third = second;
-      second = first;
-      first = strArr[i];
-    } else if(strArr[i].length > second.length){
-      third = second;
-      second = strArr[i];
-    } else if(strArr[i].length > third.length){
-      third = strArr[i];
-    }
-  }
- 
-  return third;       
+  strArr.sort(function(a,b){   //sort the array with our own homebaked sort algorithm that sorts from largest to smallest
+    return b.replace(/[^a-zA-Z]/g, "").length - a.replace(/[^a-zA-Z]/g, "").length; //MAGIC!! *(see note from #3 LongestWord)
+  });
+  return strArr[2]; //returns the third value in the array, which is the 3rd largest when we sorted in decending order above       
 }
