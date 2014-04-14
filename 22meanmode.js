@@ -3,6 +3,7 @@ function MeanMode(arr) {
   var mode;                          //creating a variable for future mode
   var mean;                          //creating a variable for future mean
   var sum = 0;                       //initialzing a sum count
+  var count = 0;
 
   for ( var i = 0; i < arr.length; i++ ) { //cycling through the array of numbers
     sum += arr[i];                   //adding numbers together for the full sum
