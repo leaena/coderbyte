@@ -6,7 +6,7 @@ function MeanMode(arr) {
 
   for ( var i = 0; i < arr.length; i++ ) { //cycling through the array of numbers
     sum += arr[i];                   //adding numbers together for the full sum
-    modeCount[arr[i]] = modeCount[arr[i] || 0; //initialzing a key value pair or using the current one if we've seen the number before
+    modeCount[arr[i]] = modeCount[arr[i]] || 0; //initialzing a key value pair or using the current one if we've seen the number before
     modeCount[arr[i]] += 1;          //adding for the count of the number
   }
   mean = sum/arr.length;             //calculating the mean value
